@@ -1,0 +1,27 @@
+<%- include('../partials/header', { title }) %>
+  <section>
+    <h2>Welcome back, <%= user?.fullName || 'Learner' %></h2>
+    <p>Your role: <strong><%= user?.role %></strong></p>
+  </section>
+
+  <section>
+    <h3>Your Enrollments</h3>
+    <div class="cards">
+      <% if (enrollments && enrollments.length) { %>
+        <% enrollments.forEach(enrollment => { %>
+          <article class="card">
+            <h4><%= enrollment.course?.title %></h4>
+            <p>Status: <%= enrollment.status %></p>
+            <div class="progress">
+              <div class="progress-bar" style="width: <%= enrollment.progress %>%"></div>
+            </div>
+            <small><%= enrollment.progress %>% complete</small>
+          </article>
+        <% }) %>
+      <% } else { %>
+        <p>You have no enrollments yet.</p>
+      <% } %>
+    </div>
+  </section>
+<%- include('../partials/footer') %>
+

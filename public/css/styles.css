@@ -1,0 +1,83 @@
+:root {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111;
+  background-color: #f7f7f9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #f7f7f9;
+}
+
+.container {
+  width: min(960px, 90vw);
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+
+.site-header,
+.site-footer {
+  background-color: #111827;
+  color: #fff;
+}
+
+.site-header .container,
+.site-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header nav a {
+  color: #fff;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.hero {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 999px;
+  background-color: #eef2ff;
+  color: #3730a3;
+  font-size: 0.75rem;
+}
+
+.progress {
+  width: 100%;
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 999px;
+  margin: 0.5rem 0;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #2563eb;
+  border-radius: 999px;
+}
+

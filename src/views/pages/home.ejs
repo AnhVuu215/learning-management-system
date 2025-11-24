@@ -1,0 +1,24 @@
+<%- include('../partials/header', { title }) %>
+  <section class="hero">
+    <h2>Level up your learning</h2>
+    <p>Browse curated courses from top instructors.</p>
+  </section>
+
+  <section>
+    <h3>Available Courses</h3>
+    <div class="cards">
+      <% if (courses && courses.length) { %>
+        <% courses.forEach(course => { %>
+          <article class="card">
+            <h4><%= course.title %></h4>
+            <p><%= course.description.substring(0, 120) %>...</p>
+            <span class="badge"><%= course.level %></span>
+          </article>
+        <% }) %>
+      <% } else { %>
+        <p>No courses published yet.</p>
+      <% } %>
+    </div>
+  </section>
+<%- include('../partials/footer') %>
+
