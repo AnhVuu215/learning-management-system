@@ -1,9 +1,15 @@
+<<<<<<< HEAD
+=======
+# learning-management-system
+A full-stack Learning Management System (LMS) built using Node.js, Express, and MongoDB, featuring role-based authentication, course management, quizzes, enrollment, and real-time learning progress tracking.
+>>>>>>> cafad58e9db58129b6650ea644dda6353b6b4912
 # LMS (Learning Management System)
 
 Production-ready LMS built with **Node.js**, **Express**, **MongoDB**, **JWT**, and both **EJS** (server-rendered) plus **React** (SPA) frontends. The project follows MVC, clean-code practices, and RESTful APIs to manage courses, lessons, enrollments, assignments, and submissions.
 
 ## Features
 
+<<<<<<< HEAD
 - 🔐 Role-based authentication (Admin, Instructor, Student) with JWT
 - 🔁 Access + refresh tokens, session revocation, device tracking, and rate-limited auth routes
 - 🔑 Forgot password + secure reset flows via SMTP
@@ -21,13 +27,36 @@ Production-ready LMS built with **Node.js**, **Express**, **MongoDB**, **JWT**, 
 
 - **Runtime**: Node.js 20+
 - **Framework**: Express 5
+=======
+-  Role-based authentication (Admin, Instructor, Student) with JWT
+-  Access + refresh tokens, session revocation, device tracking, and rate-limited auth routes
+-  Forgot password + secure reset flows via SMTP
+-  Rich course catalog (courses → chapters → lessons) with preview lessons and resource links
+-  Lesson-level quizzes, multiple-choice questions, shuffled ordering, and auto-graded attempt history
+-  Assignments, student submissions, and grading workflows
+-  Enrollment tracking with progress updates
+-  Multer-powered uploads with optional Cloudinary storage for thumbnails/media
+-  Modular architecture (controllers, services, models, middlewares)
+-  Dual UI options: EJS templates + Vite React SPA (silent token refresh)
+-  Automated integration tests (Jest + Supertest + Mongo Memory Server)
+-  Container-ready (API + SPA + Mongo via docker-compose)
+
+ Tech Stack
+
+- Runtime: Node.js 20+
+- *Framework*: Express 5
+>>>>>>> cafad58e9db58129b6650ea644dda6353b6b4912
 - **Database**: MongoDB (Mongoose ODM)
 - **Auth**: JWT, bcrypt
 - **Views**: EJS + vanilla CSS
 - **SPA**: React 19, Vite, Axios, React Router
 - **Testing**: Jest, Supertest, mongodb-memory-server
 
+<<<<<<< HEAD
 ## Folder Structure
+=======
+# Folder Structure
+>>>>>>> cafad58e9db58129b6650ea644dda6353b6b4912
 
 ```
 src/
